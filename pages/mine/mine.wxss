@@ -1,0 +1,178 @@
+page {
+    background-color: #E7E8E8;
+}
+
+/* 头部信息 */
+.userTopWrap {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 120rpx;
+    margin: auto;
+    height: 260rpx;
+    width: 85%;
+    background-color: white;
+    border-radius: 20rpx;
+}
+
+.userTopWrap .headPortraits {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100rpx;
+    margin: auto;
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.userTopWrap .userName{
+    text-align: center;
+    line-height: 260rpx;
+}
+
+/* 用户登录按钮 */
+.userLogin{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    background-color: white;
+    width: 85%;
+    height: 80rpx;
+    border-radius: 65rpx;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+
+/* 播放历史记录 */
+.recentPlayBox{
+    position: relative;
+    top: 150rpx;
+    
+}
+
+.recentPlayBox .recentPlayTitleName{
+    font-size: 28rpx;
+    padding-left: 48rpx;
+    padding-bottom: 20rpx;
+}
+
+.recentPlayBox .recentPlayWrap{
+    display: flex;
+    height: 225rpx;
+}
+
+.recentPlayWrap .recentPlayItem{
+    padding: 0 20rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.recentPlayWrap .recentPlayItem .recentPlayImage{
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 40rpx;
+}
+
+.recentPlayWrap .recentPlayItem .recentPlayTitle{
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;     
+}
+
+/* 我喜欢的音乐 */
+.likeMusicWrap{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 180rpx;
+    margin: auto;
+    height: 220rpx;
+    width: 85%;
+    background-color: white;
+    border-radius: 20rpx;
+    display: flex;
+}
+
+.likeMusicWrap .likeMusicImg{
+    margin: 35rpx 20rpx;
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 40rpx;
+}
+
+.likeMusicWrap .LikeRt{
+    margin-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.likeMusicWrap .LikeRt .likeMusicTitile{
+    font-size: 34rpx;
+}
+
+.likeMusicWrap .LikeRt .likeMusicNumer{
+    font-size: 24rpx;
+    color: #C0C0C0;
+}
+
+/* 收藏的歌单 */
+.thieMessTitle{
+    position: relative;
+    top: 220rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+.collectPlaylist{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 20rpx;
+    top: 250rpx;
+    width: 85%;
+    background-color: white;
+    border-radius: 40rpx;
+    height: 600rpx;
+}
+
+.collectPlaylist .collectPlayitem{
+    display: flex;
+    align-items: center;
+    padding: 20rpx 20rpx;
+}
+
+.collectPlaylist .collectPlayitem .PlaylistImg{
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 40rpx;
+}
+
+.collectPlaylist .collectPlayitem .PlaylistAllmes{
+    width: 50%;
+    padding-left: 20rpx;
+}
+
+.collectPlaylist .collectPlayitem .PlaylistAllmes .PlaylistTitle{
+    font-size: 32rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.collectPlaylist .collectPlayitem .PlaylistAllmes .PlaylistMess{
+    font-size: 26rpx;
+    color: #808080;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

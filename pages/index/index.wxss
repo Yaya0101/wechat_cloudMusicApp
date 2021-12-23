@@ -1,0 +1,71 @@
+/* pages/index/index.wxss */
+/* 轮播图 */
+.bannerWrap .bannerItem .img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 导航条 */
+.navWrap{
+    padding: 40rpx 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+.navWrap .navItem {
+    text-align: center;
+}
+
+.navWrap .navItem .itemIconWrap{
+    height: 120rpx;
+    width: 120rpx;
+    background-color: #FFF2EF;
+    border-radius: 50%;
+}
+
+.navWrap .navItem .itemIconWrap .itemIcon{
+    line-height: 120rpx;
+    font-size: 60rpx;
+    color: #FE2A25;
+}
+
+.navWrap .navItem .itemTitle{
+    font-size: 32rpx;
+}
+
+/* 推荐歌单 与 推荐歌曲 */
+.recommendPlayList{
+    margin-bottom: 20rpx;
+}
+
+.recommendPlayList .recommendPlayListTitle{
+    text-align: center;
+    padding-bottom: 20rpx;
+    font-size: 32rpx;
+}
+
+.recommendPlayList .scrollRecommendPlayList{
+    height: 320rpx;
+    display: flex;
+}
+
+.recommendPlayList .scrollRecommendPlayList .recommendPlayListItem{
+    padding: 20rpx;
+}
+
+.recommendPlayList .scrollRecommendPlayList .recommendPlayListItem .recommendPlayListImg{
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 40rpx;
+}
+
+.recommendPlayList .scrollRecommendPlayList .recommendPlayListItem .recommendPlayListName{
+    font-size: 24rpx;
+    width: 200rpx;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;    
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "songDetailsCom":"../../components/songDetailsCom/songDetailsCom"
+  },
+  "navigationBarTitleText": "歌单详情"
+}

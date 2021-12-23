@@ -1,0 +1,64 @@
+/* pages/login/login.wxss */
+page{
+    background-color: #FE2A25;
+}
+
+.loginWrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.loginWrap image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
+    height: 400rpx;
+    width: 400rpx;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.loginWrap .phoneNumer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 450rpx;
+    margin: auto;
+    background-color: white;
+    height: 100rpx;
+    width: 68%;
+    border-radius: 20rpx;
+    padding-left: 20rpx;
+}
+
+.loginWrap .passWorld{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 300rpx;
+    margin: auto;
+    background-color: white;
+    height: 100rpx;
+    width: 68%;
+    border-radius: 20rpx;
+    padding-left: 20rpx;
+}
+
+.loginWrap .phoneLogin{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120rpx;
+    margin: auto;
+    font-size: 30rpx;
+    width: 68%;
+    background-color: white;
+    height: 120rpx;
+    border-radius: 65rpx;
+    text-align: center;
+    line-height: 120rpx;
+    color: #FE2A25;
+}

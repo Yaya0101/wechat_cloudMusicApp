@@ -1,0 +1,13 @@
+<!--pages/playList/playList.wxml-->
+<Datehead murl="https://img0.baidu.com/it/u=3115477495,842902990&fm=26&fmt=auto"></Datehead>   
+
+<!-- 列表区 -->
+<scroll-view class="recommendedSongsList" scroll-y>
+    <view class="recommendedSongsItem" wx:for="{{recommendPlayList}}" wx:key="id" data-mid="{{item.id}}" bindtap="JumpDetails">
+        <image class="recommendedSongsPic" src="{{item.picUrl}}"></image>
+        <view class="recommendedSongsMes">
+            <view class="recommendedSongName">{{item.name}}</view>
+            <view class="songAuthor">{{item.creator.nickname}}</view>
+        </view>
+    </view>
+</scroll-view>

@@ -1,0 +1,14 @@
+<!--pages/clouds/clouds.wxml-->
+<scroll-view class="recommendVideoList">
+    <view class="recommendVideoItem" wx:for="{{videoList}}" wx:key="index" wx:if="{{item.data.coverUrl}}">
+        <video class="previewImg" 	object-fit="cover" autoplay src="{{item.data.urlInfo.url}}" wx:if="{{tapImg === item.data.urlInfo.id}}"></video>
+        <image class="previewImg" src="{{item.data.coverUrl}}" wx:else="" data-wid="{{item.data.urlInfo.id}}" bindtap="playVideo" ></image>
+        <view class="recommendVideoMess">
+            <image class="authorImg" src="{{item.data.creator.avatarUrl}}"></image>
+            <view class="xxRecommendVideoMess">
+                <view class="authorName">{{item.data.creator.nickname}}</view>
+                <view class="recommendVideoTitle">{{item.data.title}}</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

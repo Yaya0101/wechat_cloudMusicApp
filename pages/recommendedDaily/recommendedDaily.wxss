@@ -1,0 +1,44 @@
+/* pages/recommendedDaily/recommendedDaily.wxss */
+
+/* 推荐列表区 */
+.recommendedSongsList{
+    position: relative;
+    top: -35rpx;
+    border-radius: 40rpx;
+    width: 100%;
+    height: calc(100vh - 365rpx);
+    background-color: white;
+    overflow: hidden;
+}
+
+.recommendedSongsList .recommendedSongsItem{
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+}
+
+.recommendedSongsList .recommendedSongsItem .recommendedSongsPic{
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 40rpx;
+}
+
+.recommendedSongsList .recommendedSongsItem .recommendedSongsMes{
+    width: 70%;
+    padding-left: 20rpx;
+}
+
+.recommendedSongsList .recommendedSongsItem .recommendedSongName{
+    font-size: 36rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.recommendedSongsList .recommendedSongsItem .songAuthor{
+    font-size: 24rpx;
+    color: #808080;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

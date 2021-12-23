@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/recommendedDaily/recommendedDaily",
+        "pages/mine/mine",
+        "pages/rankingList/rankingList",
+        "pages/playList/playList",
+        "pages/clouds/clouds",
+        "pages/login/login",
+        "pages/songListDetails/songListDetails",
+        "pages/favoriteMusicg/favoriteMusicg",
+        "pages/player/player"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FE2A25",
+        "navigationBarTitleText": "网易云音乐",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "black",
+        "selectedColor": "#FE2A25",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "发现",
+                "iconPath": "/static/image/faxian.png",
+                "selectedIconPath": "/static/image/faxian1.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "/static/image/wode.png",
+                "selectedIconPath": "/static/image/wode1.png"
+            },
+            {
+                "pagePath": "pages/clouds/clouds",
+                "text": "视频",
+                "iconPath": "/static/image/yun_o.png",
+                "selectedIconPath": "/static/image/yun_o1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "requiredBackgroundModes": ["audio", "location"]
+}

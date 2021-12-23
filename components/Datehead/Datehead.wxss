@@ -1,0 +1,20 @@
+/* components/Datehead/Datehead.wxss */
+.specialWrap{
+    background-size: 100% 100%;
+    height: 400rpx;
+    width: 100%;
+}
+
+.specialWrap .dateFormat{
+    text-align: center;
+    line-height: 400rpx;
+    color: white;
+}
+
+.specialWrap .dateFormat .thisMonth{
+    font-size: 52rpx;
+}
+
+.specialWrap .dateFormat .thisDay{
+    font-size: 36rpx;
+}

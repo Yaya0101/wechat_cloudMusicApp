@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Datehead":"../../components/Datehead/Datehead"
+  },
+  "navigationBarTitleText": "每日推荐"
+}

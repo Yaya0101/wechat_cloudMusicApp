@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class="loginWrap">
+    <image src="/static/image/wy.png"></image>
+    <input class="phoneNumer" type="text" placeholder="请输入手机号" bindinput="getPhoneNumber"/>
+    <input class="passWorld" password type="text" placeholder="请输入密码" bindinput="getPass"/>
+    <view class="phoneLogin" bindtap="phoneLog">手机号登录</view>
+</view>

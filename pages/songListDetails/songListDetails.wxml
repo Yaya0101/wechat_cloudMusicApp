@@ -1,0 +1,2 @@
+<!--pages/songListDetails/songListDetails.wxml-->
+<songDetailsCom murl="{{coverImgUrl}}" songList="{{songList}}"></songDetailsCom>

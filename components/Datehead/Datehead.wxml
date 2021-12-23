@@ -1,0 +1,7 @@
+<!--components/Datehead/Datehead.wxml-->
+<view class="specialWrap" style="background-image: url({{murl}});">
+    <view class="dateFormat">
+        <text class="thisMonth">{{month}}</text>
+        <text class="thisDay">/{{day}}</text>
+    </view>
+</view>

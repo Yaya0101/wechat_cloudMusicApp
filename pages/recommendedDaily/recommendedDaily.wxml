@@ -1,0 +1,12 @@
+<!--pages/recommendedDaily/recommendedDaily.wxml-->
+<Datehead></Datehead>
+<!-- 列表区 -->
+<scroll-view class="recommendedSongsList" scroll-y>
+    <view class="recommendedSongsItem" wx:for="{{songList}}" wx:key="id" data-mid="{{item.id}}" data-mindex="{{index}}" bindtap="toPlayer">
+        <image class="recommendedSongsPic" src="{{item.al.picUrl}}"></image>
+        <view class="recommendedSongsMes">
+            <view class="recommendedSongName">{{item.name}}</view>
+            <view class="songAuthor">{{item.ar[0].name}}</view>
+        </view>
+    </view>
+</scroll-view>

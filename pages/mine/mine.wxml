@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view class="userTopWrap">
+    <image class="headPortraits" src="{{ userMess.avatarUrl? userMess.avatarUrl : '../../static/image/wy.png'}}">
+    </image>
+    <view class="userName">{{userMess.nickname?userMess.nickname : "请您先登录"}}</view>
+</view>
+
+<!-- 最近播放列表 -->
+<view class="recentPlayBox" wx:if="{{isLogin === true}}">
+    <view class="recentPlayTitleName">播放记录</view>
+    <scroll-view class="recentPlayWrap" scroll-x enable-flex>
+        <view class="recentPlayItem" wx:for="{{userRecentPlay}}" wx:key="index" data-mid="{{item.song.id}}" data-mindex="{{index}}" bindtap="toPlayer">
+            <image class="recentPlayImage" src="{{item.song.al.picUrl}}"></image>
+            <view class="recentPlayTitle">{{item.song.name}}</view>
+        </view>
+    </scroll-view>
+</view>
+
+<!-- 我喜欢的音乐 -->
+<view class="likeMusicWrap" wx:if="{{isLogin === true}}" bindtap="toLikeMusicPage">
+    <image class="likeMusicImg" src="{{myLikeMusicPic}}"></image>
+    <view class="LikeRt">
+        <view class="likeMusicTitile">我喜欢的音乐</view>
+        <view class="likeMusicNumer">{{myLikeMusic.length}}首</view>
+    </view>
+</view>
+
+<!-- 收藏的的歌单 -->
+<view class="thieMessTitle" wx:if="{{isLogin === true}}">收藏的歌单</view>
+<scroll-view class="collectPlaylist" scroll-y wx:if="{{isLogin === true}}">
+    <view class="collectPlayitem" wx:for="{{playlist}}" wx:key="id" data-mid="{{item.id}}" bindtap="JumpDetails">
+        <image class="PlaylistImg" src="{{item.coverImgUrl}}"></image>
+        <view class="PlaylistAllmes">
+            <view class="PlaylistTitle">{{item.name}}</view>
+            <view class="PlaylistMess">
+                <text class="PlaylistNumber">{{item.trackCount}}首 </text>
+                <text class="PlaylistUser">by {{item.creator.nickname}}</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<!-- 登录按钮 -->
+<view class="userLogin" bindtap="toLogin" wx:if="{{!isLogin}}">请登录</view>

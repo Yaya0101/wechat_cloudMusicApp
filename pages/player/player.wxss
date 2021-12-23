@@ -1,0 +1,80 @@
+/* pages/player/player.wxss */
+page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.playerWrap {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    filter: blur(20rpx) brightness(0.5);
+    transform: scale(1.5);
+}
+
+/* 歌手 */
+.singer{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+    color: #808080;
+}
+
+/* 圆盘 */
+.musicRow{
+    height: 500rpx;
+    width: 500rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -250rpx;
+    margin-top: -250rpx;
+}
+
+/* 控制器区域 */
+.controlWrap{
+    width: 100%;
+    height: 200rpx;
+    border-top: 2rpx solid #808080;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.controlWrap .previous{
+    font-size: 65rpx;
+}
+.controlWrap .pausePlay{
+    font-size: 100rpx;
+}
+.controlWrap .next{
+    font-size: 65rpx;
+}
+
+/* 时长滑块包裹器 */
+.durationWrap{
+    position: absolute;
+    width: 100%;
+    bottom: 27%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.durationWrap text{
+    font-size: 26rpx;
+    color: white;
+}
+
+/* 时长滑块 */
+.duration{
+    width: 520rpx;
+}

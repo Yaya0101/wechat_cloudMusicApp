@@ -1,0 +1,2 @@
+<!--pages/favoriteMusicg/favoriteMusicg.wxml-->
+<songDetailsCom murl="{{likeMusicList[0].al.picUrl}}" songList="{{likeMusicList}}"></songDetailsCom>

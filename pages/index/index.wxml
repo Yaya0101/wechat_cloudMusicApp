@@ -1,0 +1,38 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图 -->
+<swiper class="bannerWrap" indicator-dots indicator-active-color="white" autoplay interval="2500" circular>
+    <swiper-item class="bannerItem" wx:for="{{bannerList}}" wx:key="targetId">
+        <image class="img" src="{{item.pic}}"></image>
+    </swiper-item>
+</swiper>
+<!-- 导航条 -->
+<view class="navWrap">
+    <view class="navItem" wx:for="{{navList}}" wx:key="index">
+        <view class="itemIconWrap" data-src="{{item.url}}" bindtap="switchTab">
+            <view class="{{item.icon}} itemIcon"></view>
+        </view>
+        <text class="itemTitle">{{item.title}}</text>
+    </view>
+</view>
+
+<!-- 每日推荐歌单 -->
+<view class="recommendPlayList">
+    <view class="recommendPlayListTitle">每日推荐歌单</view>
+    <scroll-view class="scrollRecommendPlayList" scroll-x enable-flex>
+        <view class="recommendPlayListItem" wx:for="{{recommendPlayList}}" wx:key="id" data-mid="{{item.id}}" bindtap="JumpDetails">
+            <image class="recommendPlayListImg" src="{{item.picUrl}}"></image>
+            <text class="recommendPlayListName">{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>
+
+<!-- 每日推荐歌曲 -->
+<view class="recommendPlayList">
+    <view class="recommendPlayListTitle">每日推荐歌曲</view>
+    <scroll-view class="scrollRecommendPlayList" scroll-x enable-flex>
+        <view class="recommendPlayListItem" wx:for="{{recommendMusic}}" wx:key="id" data-mid="{{item.id}}" bindtap="toPlayer" data-mindex="{{index}}">
+            <image class="recommendPlayListImg" src="{{item.al.picUrl}}"></image>
+            <text class="recommendPlayListName">{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>

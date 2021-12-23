@@ -1,0 +1,24 @@
+<!--pages/player/player.wxml-->
+<view class="playerWrap" style="background-image: url({{musicMess.al.picUrl}});">
+</view>
+
+<!-- 歌手名 -->
+<view class="singer">歌手: {{musicMess.ar[0].name}}</view>
+
+<!-- 旋转图片 -->
+<image class="musicRow" src="{{musicMess.al.picUrl}}"></image>
+
+<!-- 滑块 -->
+<view class="durationWrap">
+    <text style="padding-left: 35rpx;">{{broadcastPace}}</text>
+    <slider class="duration" activeColor="#FE2A25" value="{{dragBarProgress}}" bindchanging="tdgc" bindchange="tdwc"></slider>
+    <text style="padding-right: 35rpx;">{{duration}}</text>
+</view>
+
+
+<!-- 底部控制区域 -->
+<view class="controlWrap">
+    <view class="iconfont icon-shangyishou previous" bindtap="onPrev"></view>
+    <view class="iconfont {{isPlay?'icon-zanting':'icon-bofang'}} pausePlay" bindtap="setMusicPlayState"></view>
+    <view class="iconfont icon-xiayishou next" bindtap="onNext"></view>
+</view>
