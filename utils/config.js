@@ -1,3 +1,3 @@
 export default {
-    host:'http://music.sh1.k9s.run'
+    host:'http://localhost:3000'
 }
